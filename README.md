@@ -1,55 +1,56 @@
 ﻿# KrishiSathi (কৃষিসাথী) 🌾
-> **Integrated Agriculture & Livelihood Platform for Bangladesh**
-> *Academic Project: CSE-3200 (Software Development Project-II), RUET*
+> **Integrated Agriculture & Rural Livelihood Platform for Bangladesh**
 
 ---
 
 ## 📖 Overview
 
-**KrishiSathi** is an all-in-one digital platform designed to empower Bangladeshi farmers (*krishok*), fish-farmers, and livestock rearers across the entire agricultural lifecycle. It integrates condition-based advisory, AI-powered disease diagnosis, disaster/weather warnings, and a direct farmer-to-buyer marketplace with escrow security to eliminate intermediary exploitation (*dalal*).
+**KrishiSathi** is an all-in-one digital platform designed to empower Bangladeshi farmers (*krishok*), aquaculture fish-farmers, and livestock keepers across the full agricultural lifecycle. The platform unifies hyper-localized advisory, AI-powered disease diagnosis, real-time weather and flood disaster warnings, and a direct farmer-to-buyer marketplace with secure Mobile Financial Services (bKash/Nagad/Rocket) escrow to eliminate intermediary exploitation.
+
+Built with offline-first synchronization, Bangla-first voice interfaces, and low-bandwidth/USSD compatibility, KrishiSathi bridges the technological divide for rural communities across Bangladesh.
 
 ---
 
-## 🚀 Key Features & Modules
+## 🚀 Core Platform Modules
 
-### 1. 🌾 Crop Advisory Module
-* **Location & Soil Recommendations:** Tailored crop suggestions based on soil N-P-K data and geographic zones.
-* **AI Plant Disease Detection:** Image-based leaf disease diagnosis with confidence scoring and organic/chemical remedies.
-* **Fertilizer & Irrigation Dosage:** Dosage calculator supporting local land units (*bigha, katha, decimal*) and weather-linked irrigation advisory.
-* **Seasonal Crop Calendar:** Aus, Aman, Boro, and Rabi calendars with BRRI salinity- and flood-tolerant variety recommendations.
+### 1. 🌾 Crop Advisory & Soil Intelligence
+* **Soil & Location-Based Recommendations:** Scientific crop matching based on soil N-P-K profiles and agro-ecological zones.
+* **AI Plant Disease Diagnosis:** Instant leaf disease identification via computer vision with confidence scores, organic remedies, and chemical treatment regimens.
+* **Fertilizer & Irrigation Optimizer:** Precise dosage calculations supporting regional land measurements (*bigha, katha, decimal*) coupled with rain-forecast-linked irrigation advisories.
+* **Dynamic Crop Calendar:** Aus, Aman, Boro, and Rabi timetables featuring BRRI salinity-tolerant and flood-resilient cultivars.
 
-### 2. 🐟 Fishery & Aquaculture Module
-* **Water Parameter Advisory:** Fish species recommendations from pH, dissolved oxygen, and ammonia levels.
-* **Fish Disease & Feed Calculator:** Symptom-based disease detection and biomass feed optimization.
-* **Coastal Shrimp (Chingri) & Traceability:** Salinity guidance and export-grade batch tracking for processing plants.
+### 2. 🐟 Aquaculture & Fishery Module
+* **Water Quality Analytics:** Species selection and stocking recommendations tailored to pH, dissolved oxygen, and ammonia levels.
+* **Fish Health & Feed Optimization:** Symptom-based disease detection and biomass-to-feed conversion calculators.
+* **Coastal Shrimp (Chingri) Management:** Gher salinity monitoring and export-grade batch traceability logging.
 
-### 3. 🐄 Livestock & Poultry Module
-* **Breed Selection & Care:** Guidance for poultry, dairy, and goat farming.
-* **Health & Vaccines:** Automated vaccination schedules and DLS regional disease outbreak alerts (e.g., Bird Flu, FMD).
+### 3. 🐄 Livestock & Poultry Care
+* **Breed Selection & Husbandry:** Best practices for commercial and homestead dairy, goat, and poultry rearing.
+* **Vaccination Reminders & Disease Alerts:** Scheduled immunization tracking and automated regional outbreak notices (Bird Flu, FMD).
 
 ### 4. ⛈️ Weather & Disaster Early Warning
-* **Real-time Local Weather:** BMD feeds and commercial API fallbacks.
-* **Disaster Warnings:** BWDB flood alerts, cyclone trajectories, and coastal union cyclone shelter locator.
+* **Hyper-local Weather Forecasts:** Accurate multi-day outlooks with BMD integration and weather radar fallbacks.
+* **Flood & Cyclone Alerts:** River basin flood tracking and cyclone shelter locators with evacuation guidance for coastal unions.
 
-### 5. 🛒 Direct Marketplace with Escrow
-* **Fair Price Discovery:** Real-time Department of Agricultural Marketing (DAM) benchmark prices.
-* **Direct Bidding & Trading:** Farmer-to-buyer bidding engine bypassing middlemen.
-* **Escrow-style MFS Payments:** Secure payment locking via bKash, Nagad, and Rocket released upon delivery confirmation.
-* **Reputation Scoring:** Transparent rating system for buyers and farmers.
+### 5. 🛒 Direct Marketplace with Escrow Protection
+* **Real-time Price Discovery:** Live wholesale and retail price benchmarks.
+* **Direct Farmer-to-Buyer Trading:** Transparent bidding engine connecting farmers directly with commercial buyers and retailers.
+* **MFS Escrow Engine:** In-app transaction security using bKash, Nagad, and Rocket with funds held safely until delivery verification.
+* **Reputation & Trust Score:** Mutual rating system establishing verifiable transaction histories for smallholders.
 
-### 6. 👥 Labour & Livelihood Matchmaking
-* **Seasonal Labour Exchange:** Connect farmers with nearby available agricultural labourers.
-* **Monga Lean-Season Support:** Alternative income suggestions for vulnerable northern districts.
+### 6. 👥 Seasonal Labour & Livelihood Exchange
+* **Labour Matchmaking:** On-demand matching between agricultural labourers and farm operators during peak planting and harvesting seasons.
+* **Lean-Season (Monga) Income Support:** Alternative livelihood suggestions and artisanal trade opportunities for vulnerable districts.
 
-### 7. 💳 Financial Inclusion & Government Support
-* **Cost-Benefit & Profit Calculator:** Seasonal financial forecasting per crop/pond cycle.
-* **Govt Scheme Directory:** Subsidies (BADC), PKSF microfinance, and cold storage locator.
-* **Digital History Export:** Exportable yield and transaction summaries for bank/NGO loan applications.
+### 7. 💳 Financial Empowerment & Government Support
+* **Farm Profitability Calculator:** Cycle-by-cycle cost, revenue, and margin estimations.
+* **Subsidy & Cold Storage Directory:** Up-to-date registry of agricultural subsidies, microfinance facilities, and regional cold storage capacity.
+* **Verifiable Credit History:** Exportable harvest and transaction records formatted for formal banking and microfinance loan applications.
 
-### 8. 📱 Inclusive & Low-Bandwidth Access
-* **Bangla-First Voice UI:** Spoken Bangla voice search, speech-to-text, and audio readouts.
-* **Offline-First Sync:** SQLite local caching for seamless functioning during rural network drops.
-* **Feature-Phone Access (SMS/USSD):** Price lookups and disaster alerts via plain SMS and USSD menus for non-smartphone users.
+### 8. 📱 Inclusive & Offline Access
+* **Bangla-First Voice UI:** Spoken Bangla voice search, speech-to-text, and natural audio readouts.
+* **Offline-First Synchronization:** Local SQLite caching enabling complete functionality in remote regions with intermittent 2G/3G connectivity.
+* **Feature-Phone Channel (SMS/USSD):** Plain SMS alerts and interactive USSD menus for users without smartphones.
 
 ---
 
@@ -57,17 +58,16 @@
 
 ```mermaid
 graph TD
-    UserApp[Mobile Client - React Native + Expo] --> API[Backend API - Node.js + Express]
+    UserApp[Mobile Client - React Native + Expo] --> API[Core API Gateway - Node.js + Express]
     FeaturePhone[SMS / USSD Gateway] --> API
     
-    API --> Postgres[(PostgreSQL - Structured Data)]
-    API --> Mongo[(MongoDB - Community & Logs)]
-    API --> ML[ML Inference Service - Python FastAPI]
+    API --> Postgres[(PostgreSQL - Relational DB)]
+    API --> Mongo[(MongoDB - Discussions & Media)]
+    API --> ML[ML Inference Microservice - Python FastAPI]
     
-    API --> WeatherExt[BMD / Weather API]
-    API --> FloodExt[BWDB Flood Feeds]
-    API --> DAMPrice[DAM Price Feeds]
-    API --> MFSExt[bKash / Nagad / Rocket MFS]
+    API --> WeatherExt[Meteorological & Flood Feeds]
+    API --> DAMPrice[Agricultural Market Price Feeds]
+    API --> MFSExt[bKash / Nagad / Rocket MFS APIs]
 ```
 
 ---
@@ -76,15 +76,15 @@ graph TD
 
 | Layer | Technologies |
 | :--- | :--- |
-| **Mobile Client** | React Native, Expo, TypeScript, React Navigation, SQLite (Offline Cache) |
-| **Backend API** | Node.js, Express.js, TypeScript, Prisma / Sequelize ORM, JWT Auth |
-| **Databases** | PostgreSQL (Relational Data), MongoDB (Discussions/Media), Redis (Caching) |
-| **Machine Learning** | Python, FastAPI, PyTorch / TensorFlow CNN (Disease Detection), Scikit-Learn |
-| **Integration** | bKash/Nagad Sandbox APIs, SMS/USSD Gateway Simulator, OpenWeather/BMD |
+| **Mobile Client** | React Native, Expo, TypeScript, React Navigation, SQLite (Offline Storage) |
+| **Backend API** | Node.js, Express.js, TypeScript, Prisma ORM, JWT Authentication |
+| **Databases** | PostgreSQL (Relational Data), MongoDB (Community & Logs), Redis (Caching) |
+| **Machine Learning** | Python, FastAPI, PyTorch / TensorFlow CNNs, Scikit-Learn |
+| **Integrations** | Mobile Financial Services (bKash/Nagad/Rocket), SMS/USSD Gateway, Weather APIs |
 
 ---
 
-## 📁 Repository Structure
+## 📁 Project Structure
 
 ```
 KrishiSathi/
@@ -110,20 +110,11 @@ KrishiSathi/
 │   │   ├── api/
 │   │   └── core/
 │   └── requirements.txt
-├── docs/               # Project documentation, SRS, diagrams
-│   └── KrishiSathi_Proposal-1.pdf
-├── .gitignore          # Global Git Ignore rules
-└── README.md           # Project Overview
+├── docs/               # System architecture, schemas, and specifications
+└── .gitignore          # Global Git ignore rules
 ```
 
 ---
 
-## 👥 Authors & Academic Context
-
-* **Institution:** Rajshahi University of Engineering & Technology (RUET)
-* **Department:** Department of Computer Science and Engineering (CSE)
-* **Course:** CSE-3200 — Software Development Project-II
-* **Course Instructor:** Khaled Zinnurine, Lecturer, Dept. of CSE, RUET
-* **Project Team:**
-  * Ashikur Rahman
-  * Nipu Das
+## 📄 License
+This project is licensed under the MIT License.
