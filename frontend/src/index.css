@@ -1,0 +1,100 @@
+﻿@import "tailwindcss";
+
+@layer base {
+  * {
+    border-color: rgba(255, 255, 255, 0.08);
+  }
+  body {
+    font-family: 'Plus Jakarta Sans', 'Hind Siliguri', sans-serif;
+  }
+}
+
+.font-display {
+  font-family: 'Outfit', 'Plus Jakarta Sans', sans-serif;
+}
+
+.font-bangla {
+  font-family: 'Hind Siliguri', sans-serif;
+}
+
+/* Glassmorphism 2026 aesthetics */
+.glass-panel {
+  background: rgba(15, 23, 42, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-panel-glow {
+  background: rgba(15, 23, 42, 0.7);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(16, 185, 129, 0.25);
+  box-shadow: 0 0 35px -5px rgba(16, 185, 129, 0.15);
+}
+
+.glass-panel-amber {
+  background: rgba(15, 23, 42, 0.7);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(245, 158, 11, 0.25);
+  box-shadow: 0 0 35px -5px rgba(245, 158, 11, 0.12);
+}
+
+/* Subtle grid background */
+.bg-grid-pattern {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+}
+
+/* Laser Scanner Keyframe Animation */
+@keyframes laserScan {
+  0% {
+    top: 5%;
+    opacity: 0.9;
+  }
+  50% {
+    top: 90%;
+    opacity: 1;
+  }
+  100% {
+    top: 5%;
+    opacity: 0.9;
+  }
+}
+
+.animate-laser {
+  animation: laserScan 2.4s ease-in-out infinite;
+}
+
+/* Float Keyframe */
+@keyframes softFloat {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.animate-float {
+  animation: softFloat 4s ease-in-out infinite;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #090e11;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #059669;
+}
